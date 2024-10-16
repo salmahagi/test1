@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mancala Game Demo</title>
+    <link rel="stylesheet" href="mancala.css">
+</head>
+<body>
+    <header>
+        <h1>How to Play Mancala</h1>
+        <p>Mancala is a traditional game where the objective is to collect as many stones as possible in your store. You can take turns picking stones from your pits and placing one in each consecutive pit or store.</p>
+        <h2>Basic Rules:</h2>
+        <ul>
+            <li>Players take turns picking stones from one of their pits.</li>
+            <li>Stones are placed one by one in each pit, moving counterclockwise.</li>
+            <li>If the last stone lands in your store, you get another turn.</li>
+            <li>If the last stone lands in an empty pit on your side, you capture the stones from the opposite pit.</li>
+            <li>The game ends when one player has no more stones in their pits. The player with the most stones in their store wins!</li>
+        </ul>
+    </header>
+
+    <section id="game">
+        <h2>Play Mancala:</h2>
+        <div class="board">
+            <div id="player2Store" class="store"></div>
+            <div class="row" id="player2Row">
+                <div class="pit" data-player="2" data-index="5"></div>
+                <div class="pit" data-player="2" data-index="4"></div>
+                <div class="pit" data-player="2" data-index="3"></div>
+                <div class="pit" data-player="2" data-index="2"></div>
+                <div class="pit" data-player="2" data-index="1"></div>
+                <div class="pit" data-player="2" data-index="0"></div>
+            </div>
+            <div class="row" id="player1Row">
+                <div class="pit" data-player="1" data-index="0"></div>
+                <div class="pit" data-player="1" data-index="1"></div>
+                <div class="pit" data-player="1" data-index="2"></div>
+                <div class="pit" data-player="1" data-index="3"></div>
+                <div class="pit" data-player="1" data-index="4"></div>
+                <div class="pit" data-player="1" data-index="5"></div>
+            </div>
+            <div id="player1Store" class="store"></div>
+        </div>
+        <div id="status"></div>
+        <button id="restart">Restart Game</button>
+    </section>
+
+    <footer>
+        <p>Enjoy playing Mancala and improving your skills!</p>
+    </footer>
+
+    <script src="mancala.js"></script>
+</body>
+</html>
